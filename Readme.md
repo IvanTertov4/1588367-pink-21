@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Тертышников](https://up.htmlacademy.ru/adaptive/21/user/1588367).
-* Наставник: `Неизвестно`.
+* Наставник: `Анна Пономарёва`.
 
 ---
 
