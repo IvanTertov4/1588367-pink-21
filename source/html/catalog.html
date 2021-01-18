@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-    <header class="page-header">
+  <body class="page__body">
+    <header class="body__header">
       <div class="header__all-proup">
-        <a class="page-header__logo">PINK</a>
-        <nav class="page-header__main-navigation">
+        <a class="all-proup__logo">
+          PINK
+        </a>
+        <nav class="all-proup__main-navigation">
           <button class="main-navigation__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </nav>
         <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-navigation">
+          <ul class="wrapper__list site-navigation">
             <li class="site-navigation__item"><a href="#">ГЛАВНАЯ</a></li>
             <li class="site-navigation__item"><a href="#">ФОТОГРАФИИ</a></li>
             <li class="site-navigation__item"><a href="#">КОНКУРС</a></li>
@@ -20,19 +22,15 @@
           </ul>
         </div>
       </div>
-      <h1 class="header__site-section-name">Фотографии пользователей</h1>
+      <h1 class="header__site-section-name">Взгляните на жизнь иначе!</h1>
     </header>
-    <main class="page-main">
+    <main class="body__main">
       <section class="main__photographs-group">
-        <div class="photographs-group__definition">
-          <p class="definition">
-            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-          </p>
-        </div>
+        <p class="photographs-group__definition">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
         <div class="photographs-group__the-best-picture">
-          <div class="the-best-picture__photo">
-            <img class="photo__image" src="#" alt="Фотография">
-          </div>
+            <img class="the-best-picture__image" src="#" alt="Фотография">
           <div class="the-best-picture__photo-creator">
             <span class="photo-creator__name">Анна</span>
             <span class="photo-creator__time">(5 минут назад)</span>
@@ -41,9 +39,7 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-          <div class="the-best-picture__photo">
-            <img class="photo__image" src="#" alt="Фотография">
-          </div>
+            <img class="other-picture__image" src="#" alt="Фотография">
           <div class="the-best-picture__photo-creator">
             <span class="photo-creator__name">Левон</span>
             <span class="photo-creator__time">(5 часов назад)</span>
@@ -52,9 +48,7 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-          <div class="the-best-picture__photo">
-            <img class="photo__image" src="#" alt="Фотография">
-          </div>
+            <img class="other-picture__image" src="#" alt="Фотография">
           <div class="the-best-picture__photo-creator">
             <span class="photo-creator__name">Антон</span>
             <span class="photo-creator__time">(12 часов назад)</span>
@@ -63,9 +57,7 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-          <div class="the-best-picture__photo">
-            <img class="photo__image" src="#" alt="Фотография">
-          </div>
+            <img class="other-picture__image" src="#" alt="Фотография">
           <div class="the-best-picture__photo-creator">
             <span class="photo-creator__name">Борис</span>
             <span class="photo-creator__time">(20 часов назад)</span>
@@ -74,9 +66,7 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-          <div class="the-best-picture__photo">
-            <img class="photo__image" src="#" alt="Фотография">
-          </div>
+            <img class="other-picture__image" src="#" alt="Фотография">
           <div class="the-best-picture__photo-creator">
             <span class="photo-creator__name">Сергей</span>
             <span class="photo-creator__time">(25 часов назад)</span>
@@ -85,9 +75,7 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-          <div class="the-best-picture__photo">
-            <img class="photo__image" src="#" alt="Фотография">
-          </div>
+            <img class="other-picture__image" src="#" alt="Фотография">
           <div class="the-best-picture__photo-creator">
             <span class="photo-creator__name">Максим</span>
             <span class="photo-creator__time">(40 часов назад)</span>
@@ -96,9 +84,7 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-          <div class="the-best-picture__photo">
-            <img class="photo__image" src="#" alt="Фотография">
-          </div>
+            <img class="other-picture__image" src="#" alt="Фотография">
           <div class="the-best-picture__photo-creator">
             <span class="photo-creator__name">Надежда</span>
             <span class="photo-creator__time">(45 часов назад)</span>
@@ -118,30 +104,36 @@
             <img src="#" alt="Фотография" class="photo">
           </div>
           <div class="editor__settings">
-            <p>SVG</p>
-            <p>SVG</p>
-            <p>SVG</p>
-            <p>SLIDER</p>
+            <input class="settings__setting1" name="setting1" type="checkbox"><label for="setting1">SVG1</label>
+            <input class="settings__setting2" name="setting2" type="checkbox"><label for="setting2">SVG2</label>
+            <input class="settings__setting3" name="setting3" type="checkbox"><label for="setting3">SVG3</label>
+            <input class="settings__general-setting" type="range">
           </div>
           <div class="editor__button-group">
-            <button class="button-group__button-post" type="submit">Запостить</button>
-            <button class="button-group__button-cancel" type="reset">Отмена</button>
+            <button class="button-group__button button-post" type="submit">Запостить</button>
+            <button class="button-group__button button-group__button--button-cancel" type="reset">Отмена</button>
           </div>
         </div>
       </section>
     </main>
     <footer class="body__footer">
-      <div>
+      <a href="#" class="footer__logo">
         PINK
+      </a>
+      <div class="footer__svg">
+        <a href="#" class="svg__link">
+          SVG
+        </a>
+        <a href="#" class="svg__link">
+          SVG
+        </a>
+        <a href="#" class="svg__link">
+          SVG
+        </a>
       </div>
-      <div>
-        <p>SVG1</p>
-        <p>SVG2</p>
-        <p>SVG3</p>
-      </div>
-      <div>
-        <p>Разработано</p>
-      </div>
+      <p class="footer__copyright">
+        Разработано
+      </p>
     </footer>
   </body>
 </html>
