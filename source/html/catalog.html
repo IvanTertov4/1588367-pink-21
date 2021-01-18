@@ -5,16 +5,16 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
-    <header class="body__header">
-      <div class="header__all-proup">
-        <a class="all-proup__logo">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
           PINK
         </a>
-        <nav class="all-proup__main-navigation">
-          <button class="main-navigation__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="page-header__main-nav main-nav">
+          <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </nav>
-        <div class="main-navigation__wrapper">
-          <ul class="wrapper__list site-navigation">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-navigation">
             <li class="site-navigation__item"><a href="#">ГЛАВНАЯ</a></li>
             <li class="site-navigation__item"><a href="#">ФОТОГРАФИИ</a></li>
             <li class="site-navigation__item"><a href="#">КОНКУРС</a></li>
@@ -22,16 +22,15 @@
           </ul>
         </div>
       </div>
-      <h1 class="header__site-section-name">Взгляните на жизнь иначе!</h1>
     </header>
-    <main class="body__main">
-      <section class="main__photographs-group">
+    <main class="main">
+      <section class="main__photographs-group photographs-group">
         <p class="photographs-group__definition">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <div class="photographs-group__the-best-picture">
-            <img class="the-best-picture__image" src="#" alt="Фотография">
-          <div class="the-best-picture__photo-creator">
+            <img class="photographs-group__image" src="#" alt="Фотография">
+          <div class="photographs-group__photo-creator photo-creator">
             <span class="photo-creator__name">Анна</span>
             <span class="photo-creator__time">(5 минут назад)</span>
             <span class="photo-creator__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
@@ -39,8 +38,8 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-            <img class="other-picture__image" src="#" alt="Фотография">
-          <div class="the-best-picture__photo-creator">
+            <img class="photographs-group__image" src="#" alt="Фотография">
+          <div class="photographs-group__photo-creator photo-creator">
             <span class="photo-creator__name">Левон</span>
             <span class="photo-creator__time">(5 часов назад)</span>
             <span class="photo-creator__comment">Вчера он на луну летал, сегодня в руки к нам попал.</span>
@@ -48,8 +47,8 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-            <img class="other-picture__image" src="#" alt="Фотография">
-          <div class="the-best-picture__photo-creator">
+            <img class="photographs-group__image" src="#" alt="Фотография">
+          <div class="photographs-group__photo-creator">
             <span class="photo-creator__name">Антон</span>
             <span class="photo-creator__time">(12 часов назад)</span>
             <span class="photo-creator__comment">Соседи будут рады!</span>
@@ -57,8 +56,8 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-            <img class="other-picture__image" src="#" alt="Фотография">
-          <div class="the-best-picture__photo-creator">
+            <img class="photographs-group__image" src="#" alt="Фотография">
+          <div class="photographs-group__photo-creator">
             <span class="photo-creator__name">Борис</span>
             <span class="photo-creator__time">(20 часов назад)</span>
             <span class="photo-creator__comment">Здесь могла быть ваша цитата о высоком и вечном.</span>
@@ -66,8 +65,8 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-            <img class="other-picture__image" src="#" alt="Фотография">
-          <div class="the-best-picture__photo-creator">
+            <img class="photographs-group__image" src="#" alt="Фотография">
+          <div class="photographs-group__photo-creator">
             <span class="photo-creator__name">Сергей</span>
             <span class="photo-creator__time">(25 часов назад)</span>
             <span class="photo-creator__comment">Самая кубанская в мире!</span>
@@ -75,8 +74,8 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-            <img class="other-picture__image" src="#" alt="Фотография">
-          <div class="the-best-picture__photo-creator">
+            <img class="photographs-group__image" src="#" alt="Фотография">
+          <div class="photographs-group__photo-creator">
             <span class="photo-creator__name">Максим</span>
             <span class="photo-creator__time">(40 часов назад)</span>
             <span class="photo-creator__comment">Где снег-то?</span>
@@ -84,8 +83,8 @@
           </div>
         </div>
         <div class="photographs-group__other-picture">
-            <img class="other-picture__image" src="#" alt="Фотография">
-          <div class="the-best-picture__photo-creator">
+            <img class="photographs-group__image" src="#" alt="Фотография">
+          <div class="photographs-group__photo-creator">
             <span class="photo-creator__name">Надежда</span>
             <span class="photo-creator__time">(45 часов назад)</span>
             <span class="photo-creator__comment">Всем GM и взаимные лайки!</span>
@@ -93,41 +92,39 @@
           </div>
         </div>
       </section>
-      <section class="main__editor-group">
-        <div class="editor-group__definition">
-          <p class="definition">
-            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-          </p>
-        </div>
+      <section class="main__editor-group editor-group">
+        <p class="editor-group__definition">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </p>
         <div class="editor-group__editor">
-          <div class="editor__photo">
+          <div class="editor-group__photo">
             <img src="#" alt="Фотография" class="photo">
           </div>
-          <div class="editor__settings">
+          <div class="editor-group__settings settings">
             <input class="settings__setting1" name="setting1" type="checkbox"><label for="setting1">SVG1</label>
             <input class="settings__setting2" name="setting2" type="checkbox"><label for="setting2">SVG2</label>
             <input class="settings__setting3" name="setting3" type="checkbox"><label for="setting3">SVG3</label>
             <input class="settings__general-setting" type="range">
           </div>
-          <div class="editor__button-group">
-            <button class="button-group__button button-post" type="submit">Запостить</button>
+          <div class="editor-group__button-group button-group">
+            <button class="button-group__button button-group__button--button-post" type="submit">Запостить</button>
             <button class="button-group__button button-group__button--button-cancel" type="reset">Отмена</button>
           </div>
         </div>
       </section>
     </main>
-    <footer class="body__footer">
+    <footer class="footer">
       <a href="#" class="footer__logo">
         PINK
       </a>
-      <div class="footer__svg">
-        <a href="#" class="svg__link">
+      <div class="footer__social">
+        <a href="#" class="footer__link">
           SVG
         </a>
-        <a href="#" class="svg__link">
+        <a href="#" class="footer__link">
           SVG
         </a>
-        <a href="#" class="svg__link">
+        <a href="#" class="footer__link">
           SVG
         </a>
       </div>
