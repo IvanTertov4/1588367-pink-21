@@ -1,0 +1,41 @@
+.font-settings(@size: 14px, @line: 30px, @weight: normal) {
+  font-size: @size;
+  line-height: @line;
+  font-weight: @weight;
+}
+
+.indent-zero {
+  margin: 0;
+  padding: 0;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.padding(@indent: 20px) {
+  padding-left: @indent;
+  padding-right: @indent;
+}
+
+.fieldset {
+  margin: 0;
+  text-align: left;
+}
+
+.border-radius(@radius: 2px) {
+  border-radius: @radius;
+}
+
+.range-thumb {
+  border: solid 2px @pink;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: @white;
+  cursor: pointer;
+
+  &:active {
+    background-color: @pink;
+  }
+}

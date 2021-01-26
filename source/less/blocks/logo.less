@@ -1,0 +1,102 @@
+.logo__text {
+  display: inline;
+}
+
+.logo__glasses {
+  display: inline;
+}
+
+.logo--header {
+  color: @white;
+  fill: transparent;
+}
+
+.logo--header .logo__container {
+  transform: translate(-66px, -11px);
+}
+
+@media (min-width: 660px) {
+  .logo--header {
+    fill: @white;
+  }
+
+  .logo--header .logo__container {
+    transform: translate(0);
+  }
+}
+
+.logo__glasses-sparkles {
+  display: none;
+}
+
+.logo__sparkle {
+  display: none;
+}
+
+.logo__sparkles {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .logo__glasses-sparkles {
+    display: inline;
+  }
+
+  .logo__sparkle {
+    display: inline;
+  }
+
+  .logo__sparkles {
+    display: inline;
+  }
+
+  .logo__glasses {
+    display: none;
+  }
+}
+
+.logo--footer {
+  color: @black;
+  fill: @pink;
+}
+
+@media (min-width: 660px) {
+  .logo--header {
+    fill: @white;
+  }
+
+  .logo--header .logo__container {
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo--header {
+    color: @white;
+    fill: @pink;
+  }
+
+  .logo--footer {
+    color: @black;
+    fill: @pink;
+  }
+
+  .logo__use-footer {
+    color: @pink;
+    fill: @black;
+  }
+}
+
+.logo[href]:hover {
+  color: @pink;
+}
+
+.logo[href]:active {
+  color: @white;
+  opacity: 0.3;
+}
+
+.logo--footer[href]:active {
+  color: @black;
+  opacity: 0.3;
+}

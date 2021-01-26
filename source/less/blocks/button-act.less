@@ -1,0 +1,75 @@
+.button-act {
+  .font-settings(18px, 18px, bold);
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 0;
+  box-sizing: border-box;
+  max-width: 300px;
+  width: 280px;
+  height: 55px;
+  border: solid 3px;
+  border-radius: 50px;
+
+  &--download {
+    color: @white;
+    border-color: @white;
+
+    &:hover {
+      background-color: @white;
+      color: @pink;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
+  }
+
+  &--post {
+    color: @pink;
+    border-color: @pink;
+    background-color: @light-pink;
+
+    &:hover {
+      background-color: @pink;
+      color: @white;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cancel {
+    color: @text-color;
+    border-color: @text-color;
+    background-color: @text-color;
+    opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: @text-color;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button-act {
+    &--download {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-act {
+    &--download {
+      font-size: 21px;
+    }
+  }
+}

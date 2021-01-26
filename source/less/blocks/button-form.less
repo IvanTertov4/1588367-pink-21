@@ -1,0 +1,38 @@
+.button-form {
+  .font-settings(18px, 30px, bold);
+  .border-radius;
+  display: inline-block;
+  background-color: @green;
+  color: @white;
+  text-transform: uppercase;
+  height: 63px;
+  width: 280px;
+  padding: 0 28px;
+  border: none;
+
+  &:hover {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @disabled;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button-form {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-form {
+    &--close {
+      width: 460px;
+    }
+  }
+}

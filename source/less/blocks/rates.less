@@ -1,8 +1,8 @@
-/*.rates {
+.rates {
   border: none;
   padding-top: 93px;
   width: 100%;
-  background-color: $texture-color;
+  background-color: @light-pink;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: top right;
@@ -18,7 +18,7 @@
 .rates__list {
   transform: translateX(-542px);
   border-collapse: collapse;
-  background-color: #ffffff;
+  background-color: @white;
   width: 100%;
 
   td {
@@ -35,7 +35,7 @@
   display: flex;
 
   &--top {
-    background-color: $base-color;
+    background-color: @text-color;
     border-bottom: none;
   }
 }
@@ -44,10 +44,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #ffffff;
+  color: @white;
   box-sizing: border-box;
   padding: 16px 20px 22px;
-  border: solid 2px #e5e5e5;
+  border: solid 2px @disabled;
 
   &--hit::after {
     content: "";
@@ -72,24 +72,24 @@
 }
 
 .rates__title {
-  @include font-settings(18px, 30px, bold);
-  @include indent-zero;
+  .font-settings(18px, 30px, bold);
+  .indent-zero;
   text-transform: uppercase;
 }
 
 .rates__price {
-  @include font-settings(24px, 30px, 300);
+  .font-settings(24px, 30px, 300);
 }
 
 .rates__function {
-  @include font-settings;
+  .font-settings;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
   padding: 14px 22px;
   box-sizing: border-box;
-  border: solid 2px #e5e5e5;
+  border: solid 2px @disabled;
 
   span {
     display: inline;
@@ -101,16 +101,16 @@
 }
 
 .rates__func-off {
-  fill: $insistent-color;
+  fill: @pink;
 }
 
 .rates__toggles {
-  background-color: $texture-color;
+  background-color: @light-pink;
   padding-top: 40px;
   padding-bottom: 48px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: @tablet-width) {
   .rates {
     padding-top: 88px;
   }
@@ -130,7 +130,7 @@
   }
 
   .rates__wrapper {
-    @include page-padding;
+    .padding;
     width: auto;
     height: 100%;
     box-sizing: content-box;
@@ -166,14 +166,14 @@
     }
 
     &--none {
-      background-color: $texture-color;
-      border: solid 2px $texture-color;
-      border-bottom: solid 2px #e5e5e5;
+      background-color: @light-pink;
+      border: solid 2px @light-pink;
+      border-bottom: solid 2px @disabled;
     }
   }
 
   .rates__title {
-    @include font-settings(16px, 24px, bold);
+    .font-settings(16px, 24px, bold);
   }
 
   .rates__price {
@@ -185,14 +185,14 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: @desktop-width) {
   .rates {
     padding-top: 148px;
     background-size: 100%;
   }
 
   .rates__wrapper {
-    @include page-padding(10px);
+    .padding(10px);
     width: 960px;
     height: 100%;
     box-sizing: border-box;
@@ -207,11 +207,11 @@
   }
 
   .rates__title {
-    @include font-settings(18px, 30px, bold);
+    .font-settings(18px, 30px, bold);
   }
 
   .rates__price {
-    @include font-settings(24px, 30px, 300);
+    .font-settings(24px, 30px, 300);
   }
 
   .rates__caption {
